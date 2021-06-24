@@ -30,7 +30,7 @@
 2. Python 3.6 / 3.7
 
 ### Installation
-1. Use the PyCharm to open the file
+1. Use the PyCharm to open the file ("COMP5423_Lab1_WebApp")
 2. Right click the app.py and click "Run 'Flask (app.py)' " in the pop-up menu.
 3. When PyCharm finished to set up the environment, open this URL http://127.0.0.1:5000/ in the browser.
 
