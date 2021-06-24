@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/EmotionClassifier.js') }}"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/EmotionClassifier.css') }}" type="text/css">
+    <title>Sentence's Emotion Classifier</title>
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+<div class="container d-flex p-1">
+    <div class="col-lg-8 m-auto guessingBox" style="padding: 20px; ">
+        <div class="mb-1">
+            <div class="row">
+                <label for="inputSentenceLabel" class="form-label text-center">😆 Let me guess your sentence Emotion
+                    😡</label>
+            </div>
+            <textarea class="form-control" name="sentence" id="sentence" rows="3"
+                      placeholder="Input your sentence here..."></textarea>
+        </div>
+        <div class="row mx-auto pt-4 submitBTN_container" style="width: 200px;">
+            <button id="submitBTN" class="btn btn-primary mb-3">
+                <span id='submitBTN_lable'>Predict!</span>
+            </button>
+        </div>
+        <div class="row mx-auto pt-4 resetBTN_container" style="width: 200px; display: None">
+            <button id="resetBTN" class="btn btn-primary mb-3">
+                <span id='resetBTN_label'>Reset</span>
+            </button>
+        </div>
+        <div class="row mx-auto guessingBox_result"></div>
+    </div>
+</div>
+
+</body>
+
+</html>

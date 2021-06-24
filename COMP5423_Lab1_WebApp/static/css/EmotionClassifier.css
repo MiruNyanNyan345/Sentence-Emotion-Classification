@@ -1,0 +1,27 @@
+html,
+body {
+  background-color: #f1f1e3;
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  height: 100%;
+  min-height: 100%;
+}
+
+.form-label {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.guessingBox {
+  background-color: white;
+  border: 1px;
+  border-radius: 30px;
+}
+
+.guessingBox_result {
+  font-size: 20px;
+  font-weight: bold;
+}
